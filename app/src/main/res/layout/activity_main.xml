@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#025D68"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/helperMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110dp"
+        android:shadowColor="#E82A1C"
+        android:text="@string/enter_your_name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#021B1E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/nameInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:inputType="textCapWords"
+        android:hint="@string/inputhinttext"
+        android:shadowColor="#FAFAFA"
+        android:textColor="#0E0E0E"
+        android:textColorHighlight="#0E0E0E"
+        android:textColorLink="#0E0E0E"
+        android:textCursorDrawable="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/helperMessage"/>
+
+
+    <Button
+        android:id="@+id/createBirthdayButtom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:background="#151515"
+        android:text="@string/create_the_birthday_card"
+        android:textColor="#0E0E0E"
+        app:backgroundTint="#015D68"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="createBirthdaycard"
+        app:layout_constraintTop_toBottomOf="@+id/nameInput" />
+</androidx.constraintlayout.widget.ConstraintLayout>
